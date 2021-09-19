@@ -1,0 +1,172 @@
+/* Carousel */
+
+.carousel {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+
+    position: relative;
+    width: 100%;
+}
+
+.carousel .carousel-item {
+    height: 100px;
+    width: 250px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100px;
+    width: 250px;
+} 
+
+.carousel-track{
+    display: flex;
+
+    width: calc(250px*4);
+    animation: carousel 40s linear infinite;
+}
+
+.category-item{
+    display: block;
+    position: relative;
+}
+
+.category-item-title{
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.125);
+    color: black;
+    font-size: .8rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+
+    transform: translate(-50%, -50%);
+}
+
+.category-item:hover img{
+    opacity: 0.7;
+}
+
+@keyframes carousel{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*2));
+    }
+}
+
+
+.carousel::before, .carousel::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.carousel::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.carousel::before {
+    left: 0;
+    top: 0;
+}
+ 
+
+/*  */
+/* 
+.hero{
+    min-height: 10rem;
+    max-height: 20rem;
+}
+ */
+
+.overflow{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider{
+    position: relative;
+    text-align: center;
+    margin: 0 auto ;
+    padding: 0;
+}
+
+.slides .slide{
+    float: left;
+    position: relative;
+    width: 20%;
+}
+
+.slides .items{
+    line-height: 0;
+    margin: 0;
+    position: relative;
+    width: 500%;
+}
+
+@keyframes slider{
+    0% {
+        left: 0%;
+    }
+    10% {
+        left: 0%;
+    }
+    20% {
+        left: -100%;
+    }
+    30% {
+        left: -200%;
+    }
+    40% {
+        left: -300%;
+    }
+    50% {
+        left: -400%;
+    }
+    60% {
+        left: -300%;
+    }
+    70% {
+        left: -200%;
+    }
+    80% {
+        left: -100%;
+    }
+    90% {
+        left: -50%;
+    }
+    100% {
+        left: -0%;
+    }
+
+}
+
+.slider .items{
+    animation: slider 30s infinite;
+}
+
+.slider .items:hover{
+    animation-play-state: paused;
+}
+.slide img{
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.slide2{
+    position: absolute;
+    left: 0%;
+    top: 40%;
+}
