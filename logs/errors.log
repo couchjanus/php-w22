@@ -1,0 +1,36 @@
+[19-Sep-2021 11:15:59 Europe/Kiev] This is test error
+[19-Sep-2021 11:33:54 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, int given in C:\xampp\htdocs\shop.my\bootstrap\app.php:63
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\public\index.php(3): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 63
+[19-Sep-2021 11:33:55 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, int given in C:\xampp\htdocs\shop.my\bootstrap\app.php:63
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\public\index.php(3): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 63
+[19-Sep-2021 11:39:07 Europe/Kiev] PHP Warning:  Undefined variable $rote in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 64
+[19-Sep-2021 11:39:07 Europe/Kiev] PHP Warning:  Undefined variable $rote in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 64
+[19-Sep-2021 11:39:07 Europe/Kiev] PHP Warning:  Undefined variable $rote in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 64
+[19-Sep-2021 11:39:08 Europe/Kiev] PHP Warning:  Undefined variable $rote in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 64
+[19-Sep-2021 11:39:08 Europe/Kiev] PHP Warning:  Undefined variable $rote in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 64
+[19-Sep-2021 11:39:09 Europe/Kiev] PHP Warning:  Undefined variable $rote in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 64
+[19-Sep-2021 11:49:05 Europe/Kiev] 404: Oops, Page not found
+[19-Sep-2021 11:49:06 Europe/Kiev] 404: Oops, Page not found
+[19-Sep-2021 11:51:30 Europe/Kiev] 404: Oops, Page not found
+[19-Sep-2021 11:59:20 Europe/Kiev] 404: Oops, Page not found
+[19-Sep-2021 12:02:10 Europe/Kiev] 404: Oops, Page not found
+[19-Sep-2021 12:24:18 Europe/Kiev] 404: Oops, Page not found
+[19-Sep-2021 12:49:25 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\shop.my\app\Controllers\ContactController.php on line 3
+[19-Sep-2021 12:49:26 Europe/Kiev] 404: Oops, Page not found
+[19-Sep-2021 12:50:17 Europe/Kiev] PHP Warning:  Undefined variable $uri in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 66
+[19-Sep-2021 12:50:17 Europe/Kiev] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\xampp\htdocs\shop.my\bootstrap\app.php:66
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\bootstrap\app.php(66): file_get_contents('')
+#1 C:\xampp\htdocs\shop.my\app\Controllers\ContactController.php(2): conf('contacts')
+#2 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 66
+[19-Sep-2021 12:50:18 Europe/Kiev] 404: Oops, Page not found
+[19-Sep-2021 12:51:01 Europe/Kiev] 404: Oops, Page not found
