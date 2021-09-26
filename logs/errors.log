@@ -115,3 +115,36 @@ Stack trace:
 #5 {main}
   thrown in C:\xampp\htdocs\shop.my\app\Views\Site\contact\index.php on line 14
 [25-Sep-2021 13:01:49 Europe/Kiev] 404: Oops, Page not found
+[26-Sep-2021 10:43:35 Europe/Kiev] PHP Fatal error:  Uncaught Error: Cannot access private property HomeController::$title in C:\xampp\htdocs\shop.my\bootstrap\app.php:77
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\public\index.php(3): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 77
+[26-Sep-2021 10:44:09 Europe/Kiev] PHP Fatal error:  Uncaught Error: Cannot access protected property HomeController::$title in C:\xampp\htdocs\shop.my\bootstrap\app.php:77
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\public\index.php(3): require_once()
+#1 {main}
+  thrown in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 77
+[26-Sep-2021 10:54:11 Europe/Kiev] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function HomeController::__construct(), 0 passed in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 75 and exactly 1 expected in C:\xampp\htdocs\shop.my\app\Controllers\HomeController.php:7
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\bootstrap\app.php(75): HomeController->__construct()
+#1 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\shop.my\app\Controllers\HomeController.php on line 7
+[26-Sep-2021 11:22:35 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 78
+[26-Sep-2021 11:24:53 Europe/Kiev] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 78
+[26-Sep-2021 12:07:19 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "Admin\SettingsController" not found in C:\xampp\htdocs\shop.my\core\Router.php:19
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\bootstrap\app.php(79): Router->run()
+#1 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\shop.my\core\Router.php on line 19
+[26-Sep-2021 12:29:58 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method SettingsController::method() in C:\xampp\htdocs\shop.my\core\Router.php:29
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\bootstrap\app.php(79): Router->run()
+#1 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\shop.my\core\Router.php on line 29
+[26-Sep-2021 12:46:17 Europe/Kiev] PHP Warning:  Undefined variable $prefix in C:\xampp\htdocs\shop.my\core\Router.php on line 38
+[26-Sep-2021 12:46:17 Europe/Kiev] PHP Warning:  Undefined variable $prexix in C:\xampp\htdocs\shop.my\core\Router.php on line 19
+[26-Sep-2021 12:47:27 Europe/Kiev] PHP Warning:  Undefined variable $prefix in C:\xampp\htdocs\shop.my\core\Router.php on line 38

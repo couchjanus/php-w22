@@ -1,4 +1,19 @@
 <?php
 
+class HomeController
+{
+    private $title;
 
-render('Site/home');
+    // public function __construct($title)
+    // {
+    //     $this->title = $title;
+    //     render('Site/home');
+    // }
+
+    public function index()
+    {
+        // $this->title = $title;
+        render('home/index');
+    }
+
+}

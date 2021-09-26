@@ -1,3 +1,12 @@
 <?php
+class CatalogController
+{
+    private $title;
 
-render('Site/catalog');
+    public function index()
+    {
+        // $this->title = $title;
+        render('catalog/index');
+    }
+
+}

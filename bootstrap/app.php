@@ -7,6 +7,10 @@ const VIEWS = ROOT.'/app/Views';
 const APP_ENV = 'dev';
 const LOGS = ROOT.'/logs';
 
+define('ROUTER', require_once ROOT.'/config/routes.php');
+
+require_once ROOT.'/core/Router.php';
+
 function render($view, $params = null){
     ob_start();
     $content = renderView($view, $params);
@@ -70,19 +74,7 @@ function conf($mix){
     }
 }
 
-$routes = require_once ROOT.'/config/routes.php';
-// var_dump($routes);
-$result = false;
 
-foreach($routes as $route => $item){
-    if($route == uri()){
-        $result = true;
-        include_once CONTROLLERS."/${item}";
-        break;
-    }
-}
+$router = new Router();
+$router->run();
 
-if(!$result){
-    echo "<h1>404: Oops, Page not found!</h1>";
-    error_log('404: Oops, Page not found');
-}

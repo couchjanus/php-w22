@@ -1,3 +1,12 @@
 <?php
+class CartController
+{
+    private $title;
 
-render('Site/cart');
+    public function index()
+    {
+        // $this->title = $title;
+        render('cart/index');
+    }
+
+}

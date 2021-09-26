@@ -1,11 +1,12 @@
 <?php
 return 
 [
-    '' => 'HomeController.php' ,
-    'catalog' => 'CatalogController.php' ,
-    'cart' => 'CartController.php' ,
-    'about' => 'AboutController.php' ,
-    'admin' => 'Admin\DashboardController.php' ,
-    'admin/settings' => 'Admin\SettingsController.php' ,
-    'contact' => 'ContactController.php' ,
+    '' => 'HomeController@index' ,
+    'catalog' => 'CatalogController@index' ,
+    'cart' => 'CartController@index' ,
+    'about' => 'AboutController@index' ,
+    'admin' => 'Admin\DashboardController@index' ,
+    'admin/settings' => 'Admin\SettingsController@index' ,
+    'admin/settings/update' =>  'Admin\SettingsController@update',
+    'contact' => 'ContactController@index' ,
 ];
