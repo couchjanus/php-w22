@@ -34,3 +34,84 @@ Stack trace:
   thrown in C:\xampp\htdocs\shop.my\bootstrap\app.php on line 66
 [19-Sep-2021 12:50:18 Europe/Kiev] 404: Oops, Page not found
 [19-Sep-2021 12:51:01 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:24:01 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:25:56 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:27:25 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:27:27 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:27:29 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:27:51 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:27:53 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:30:11 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:31:04 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:31:48 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:32:25 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:34:28 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:34:55 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:34:56 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:37:11 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:39:29 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:41:11 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:43:18 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:44:28 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:44:57 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:45:49 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:47:56 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:49:33 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:51:52 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:54:32 Europe/Kiev] PHP Warning:  Undefined array key "couintry" in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 27
+[25-Sep-2021 10:54:33 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:55:01 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:57:15 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 10:57:17 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:02:16 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:02:34 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:09:06 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:09:13 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php:17
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): include_once()
+#1 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 17
+[25-Sep-2021 11:09:13 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:09:38 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:09:44 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:16:55 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:17:05 Europe/Kiev] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\shop.my\app\Controllers\ContactController.php on line 5
+[25-Sep-2021 11:17:06 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:18:54 Europe/Kiev] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 3
+[25-Sep-2021 11:18:54 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 43
+[25-Sep-2021 11:18:54 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 49
+[25-Sep-2021 11:18:54 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 55
+[25-Sep-2021 11:18:54 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 61
+[25-Sep-2021 11:18:54 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 67
+[25-Sep-2021 11:18:54 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:18:54 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:19:00 Europe/Kiev] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 3
+[25-Sep-2021 11:19:00 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 43
+[25-Sep-2021 11:19:00 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 49
+[25-Sep-2021 11:19:00 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 55
+[25-Sep-2021 11:19:00 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 61
+[25-Sep-2021 11:19:00 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\shop.my\app\Controllers\Admin\SettingsController.php on line 67
+[25-Sep-2021 11:19:00 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:19:00 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 11:19:18 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 12:59:32 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in C:\xampp\htdocs\shop.my\app\Views\Site\contact\index.php:13
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\bootstrap\app.php(22): include_once()
+#1 C:\xampp\htdocs\shop.my\bootstrap\app.php(12): renderView('Site/contact/in...', Array)
+#2 C:\xampp\htdocs\shop.my\app\Controllers\ContactController.php(14): render('Site/contact/in...', Array)
+#3 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): include_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\shop.my\app\Views\Site\contact\index.php on line 13
+[25-Sep-2021 12:59:33 Europe/Kiev] 404: Oops, Page not found
+[25-Sep-2021 13:01:48 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in C:\xampp\htdocs\shop.my\app\Views\Site\contact\index.php:14
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\bootstrap\app.php(22): include_once()
+#1 C:\xampp\htdocs\shop.my\bootstrap\app.php(12): renderView('Site/contact/in...', Array)
+#2 C:\xampp\htdocs\shop.my\app\Controllers\ContactController.php(14): render('Site/contact/in...', Array)
+#3 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): include_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\shop.my\app\Views\Site\contact\index.php on line 14
+[25-Sep-2021 13:01:49 Europe/Kiev] 404: Oops, Page not found
