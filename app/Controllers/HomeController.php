@@ -1,19 +1,19 @@
 <?php
+require_once ROOT.'/core/Controller.php';
 
-class HomeController
+class HomeController extends Controller
 {
     private $title;
 
-    // public function __construct($title)
-    // {
-    //     $this->title = $title;
-    //     render('Site/home');
-    // }
+    public function __construct()
+    {
+        parent::__construct('site');
+    }
 
     public function index()
     {
-        // $this->title = $title;
-        render('home/index');
+        $this->title = 'Home Page';
+        $this->render('home/index', ['title' => $this->title]);
     }
 
 }

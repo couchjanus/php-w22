@@ -1,18 +1,20 @@
 <?php
 
+require_once ROOT.'/core/Controller.php';
 
-class SettingsController
+class SettingsController extends Controller
 {
     private $contacts;
 
     public function __construct()
     {
-      $this->contacts = conf('contacts');
+        parent::__construct('admin');
+        $this->contacts = conf('contacts');
     }
 
     public function index()
     {
-        render('admin/contact/index', [
+        $this->render('admin/contact/index', [
             "result" => $this->contacts,
            
         ]);
