@@ -4,6 +4,7 @@ define('ROOT', dirname(__DIR__));
 
 const CONTROLLERS = ROOT.'/app/Controllers';
 const VIEWS = ROOT.'/app/Views';
+const MODELS = ROOT.'/app/Models';
 const APP_ENV = 'dev';
 const LOGS = ROOT.'/logs';
 

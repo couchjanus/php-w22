@@ -203,3 +203,97 @@ Stack trace:
 #4 {main}
   thrown in C:\xampp\htdocs\shop.my\core\Controller.php on line 21
 [02-Oct-2021 12:42:41 Europe/Kiev] PHP Warning:  Undefined property: Response::$StatusCode in C:\xampp\htdocs\shop.my\core\Response.php on line 64
+[03-Oct-2021 12:20:35 Europe/Kiev] PHP Warning:  include_once(C:\xampp\htdocs\shop.my/app/Controllers/Admin/CategortyController.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\shop.my\core\Router.php on line 19
+[03-Oct-2021 12:20:35 Europe/Kiev] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\shop.my/app/Controllers/Admin/CategortyController.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\shop.my\core\Router.php on line 19
+[03-Oct-2021 12:20:35 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class "CategortyController" not found in C:\xampp\htdocs\shop.my\core\Router.php:20
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): Router->run()
+#1 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\shop.my\core\Router.php on line 20
+[03-Oct-2021 13:06:12 Europe/Kiev] PHP Warning:  Undefined variable $cleand in C:\xampp\htdocs\shop.my\core\Request.php on line 25
+[03-Oct-2021 13:06:12 Europe/Kiev] PHP Fatal error:  Uncaught TypeError: array_merge(): Argument #2 must be of type array, null given in C:\xampp\htdocs\shop.my\core\Request.php:15
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\core\Request.php(15): array_merge(Array, NULL)
+#1 C:\xampp\htdocs\shop.my\core\Request.php(8): Request->prepareData(NULL, Array)
+#2 C:\xampp\htdocs\shop.my\core\Controller.php(15): Request->__construct()
+#3 C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php(9): Controller->__construct('admin')
+#4 C:\xampp\htdocs\shop.my\core\Router.php(20): CategoryController->__construct()
+#5 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): Router->run()
+#6 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\shop.my\core\Request.php on line 15
+[03-Oct-2021 13:06:46 Europe/Kiev] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Controller::render(), 1 passed in C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php on line 20 and exactly 2 expected in C:\xampp\htdocs\shop.my\core\Controller.php:22
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php(20): Controller->render('admin/categorie...')
+#1 C:\xampp\htdocs\shop.my\core\Router.php(21): CategoryController->create()
+#2 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): Router->run()
+#3 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\shop.my\core\Controller.php on line 22
+[03-Oct-2021 13:08:28 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Request::data() in C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php:25
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\core\Router.php(21): CategoryController->store()
+#1 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): Router->run()
+#2 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php on line 25
+[03-Oct-2021 13:10:49 Europe/Kiev] PHP Warning:  Undefined property: Request::$date in C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php on line 27
+[03-Oct-2021 13:10:49 Europe/Kiev] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php on line 27
+[03-Oct-2021 13:10:49 Europe/Kiev] PHP Warning:  Undefined variable $status in C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php on line 28
+[03-Oct-2021 13:10:49 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?)' at line 1 in C:\xampp\htdocs\shop.my\core\Model.php:26
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\core\Model.php(26): PDO->prepare('INSERT INTO cat...')
+#1 C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php(28): Model->save(Array)
+#2 C:\xampp\htdocs\shop.my\core\Router.php(21): CategoryController->store()
+#3 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): Router->run()
+#4 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\shop.my\core\Model.php on line 26
+[03-Oct-2021 13:11:23 Europe/Kiev] PHP Warning:  Undefined variable $status in C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php on line 28
+[03-Oct-2021 13:11:23 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?)' at line 1 in C:\xampp\htdocs\shop.my\core\Model.php:26
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\core\Model.php(26): PDO->prepare('INSERT INTO cat...')
+#1 C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php(28): Model->save(Array)
+#2 C:\xampp\htdocs\shop.my\core\Router.php(21): CategoryController->store()
+#3 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): Router->run()
+#4 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\shop.my\core\Model.php on line 26
+[03-Oct-2021 13:11:57 Europe/Kiev] PHP Warning:  Undefined array key "atatus" in C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php on line 25
+[03-Oct-2021 13:11:57 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?)' at line 1 in C:\xampp\htdocs\shop.my\core\Model.php:26
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\core\Model.php(26): PDO->prepare('INSERT INTO cat...')
+#1 C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php(28): Model->save(Array)
+#2 C:\xampp\htdocs\shop.my\core\Router.php(21): CategoryController->store()
+#3 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): Router->run()
+#4 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\shop.my\core\Model.php on line 26
+[03-Oct-2021 13:12:21 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?)' at line 1 in C:\xampp\htdocs\shop.my\core\Model.php:26
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\core\Model.php(26): PDO->prepare('INSERT INTO cat...')
+#1 C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php(28): Model->save(Array)
+#2 C:\xampp\htdocs\shop.my\core\Router.php(21): CategoryController->store()
+#3 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): Router->run()
+#4 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\shop.my\core\Model.php on line 26
+[03-Oct-2021 13:13:51 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1 in C:\xampp\htdocs\shop.my\core\Model.php:26
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\core\Model.php(26): PDO->prepare('INSERT INTO cat...')
+#1 C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php(28): Model->save(Array)
+#2 C:\xampp\htdocs\shop.my\core\Router.php(21): CategoryController->store()
+#3 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): Router->run()
+#4 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\shop.my\core\Model.php on line 26
+[03-Oct-2021 13:16:39 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1 in C:\xampp\htdocs\shop.my\core\Model.php:27
+Stack trace:
+#0 C:\xampp\htdocs\shop.my\core\Model.php(27): PDO->prepare('INSERT INTO cat...')
+#1 C:\xampp\htdocs\shop.my\app\Controllers\Admin\CategoryController.php(28): Model->save(Array)
+#2 C:\xampp\htdocs\shop.my\core\Router.php(21): CategoryController->store()
+#3 C:\xampp\htdocs\shop.my\bootstrap\app.php(80): Router->run()
+#4 C:\xampp\htdocs\shop.my\public\index.php(3): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\shop.my\core\Model.php on line 27
