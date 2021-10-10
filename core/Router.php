@@ -11,22 +11,26 @@ class Router
 
     public function run()
     {
-        foreach($this->routes as $route => $item)
-        {
-            if($route == uri()){
-                list($prefix, $controller, $method) = $this->getController($item);
-
-                include_once CONTROLLERS."${prefix}/${controller}.php";
-                $inst = new $controller();
-                $inst->$method();
-                break;
+        if(array_key_exists(uri(), $this->routes)){
+            return $this->init(...$this->getController($this->routes[uri()]));
+        } else {
+            foreach ($this->routes as $key => $value) {
+                $pattern = "@^".preg_replace('/{([a-zA-Z0-9]+)}/', '(?<$1>[0-9]+)', $key)."$@";
+                preg_match($pattern, uri(), $matches);
+                array_shift($matches);
+                if ($matches) {
+                    $params = $this->getController($value);
+                    $params[] = $matches;
+                    return $this->init(...$params);
+                }
             }
+            return '<h1>404 Not Found</h1>';
         }
-
     }
 
-    private function getController($item):array
+    private function getController(string $item):array
     {
+
         list($segments, $method) = explode('@', $item);
 
         $segments = explode('\\', $segments);
@@ -37,5 +41,12 @@ class Router
             $prefix = '/'. $prefix;
         }
         return [$prefix, $controller, $method];
+    }
+
+    private function init($path, $controller, $action, $params=[]){
+        $path = CONTROLLERS . $path .'/'. $controller . '.php';
+        include_once $path;
+        $controller = new $controller();
+        return $controller->$action($params);
     }
 }

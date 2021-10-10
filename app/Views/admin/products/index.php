@@ -1,0 +1,24 @@
+<div class="table-responsive">
+  <?php if (count($products)>0):?>
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($products as $product):?>
+                <tr>
+                    <td><?=$product->id?></td>
+                    <td><?=$product->name?></td>
+                    <td><?=$product->status?></td>
+                    <td><button>action</button></td>
+                </tr>
+                <?php endforeach;?>
+        </tbody>
+    </table>
+    <?php endif;?>
+</div>

@@ -316,8 +316,8 @@ function renderModalWindow() {
 }
 
 async function fetchData(resourse) {
-    const url = `https://my-json-server.typicode.com/couchjanus/db/${resourse}`;
-
+    // const url = `https://my-json-server.typicode.com/couchjanus/db/${resourse}`;
+    const url = '/api/products';
     await fetch(url)
         .then((response) => {
             if (response.status !== 200) {

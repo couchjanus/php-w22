@@ -33,4 +33,26 @@ class CategoryController extends Controller
         
     }
 
+    public function edit($params = []){
+        extract($params);
+       
+        $category = (new Category())->get($id);
+        $this->render('admin/categories/edit', compact('category'));
+    }
+
+    public function update(){
+        $status = $this->request->data['status']?1:0;
+        (new Category())->update($this->request->data['id'],
+        [
+            'name' => $this->request->data['name'],
+            'status' => $status
+        ]);
+        $redirect = "http://".$_SERVER['HTTP_HOST'].'/admin/categories';
+        header("Location:$redirect");
+    }
+
+    public function delete($params){
+
+    }
+
 }

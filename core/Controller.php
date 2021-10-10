@@ -27,5 +27,9 @@ class Controller
        
     }
 
-
+    public function redirect($location='')
+    {
+        header('Location: http://'.$_SERVER['HTTP_HOST'].$location);
+        exit();
+    }
 }

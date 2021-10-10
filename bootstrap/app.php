@@ -8,6 +8,7 @@ const MODELS = ROOT.'/app/Models';
 const APP_ENV = 'dev';
 const LOGS = ROOT.'/logs';
 
+define('STORAGE', $_SERVER['DOCUMENT_ROOT'] . '/storage/uploads');
 define('ROUTER', require_once ROOT.'/config/routes.php');
 
 require_once ROOT.'/core/Router.php';
@@ -75,6 +76,10 @@ function conf($mix){
     }
 }
 
+// Session
+require_once ROOT.'/core/Session.php';
+
+Session::instance();
 
 $router = new Router();
 $router->run();

@@ -26,4 +26,37 @@ class Model
         $stmt = $this->conn->prepare($sql);
         $stmt->execute($params);
     }
+
+    public function get($pk){
+        $stmt = $this->conn->prepare("SELECT * FROM ".static::$table." WHERE id = ".$pk);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_OBJ);
+    }
+    public function update($pk, $params){
+        $keys = [];
+        foreach($params as $key => $value){
+            array_push($keys, $key."='".$value."'");
+        }
+        $sql = sprintf('UPDATE %s SET %s WHERE %s = %s', static::$table, implode(',', $keys), 'id', $pk);
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+    }
+
+    public function destroy($pk){
+        $stmt = $this->conn->prepare("DELETE FROM ".static::$table. " WHERE id = ? LIMIT 1");
+        $stmt->execute([$pk]);
+    }
+
+    public function run($sql)
+    {
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
+
+    public function getBy($sql){
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetch();
+    }
 }
